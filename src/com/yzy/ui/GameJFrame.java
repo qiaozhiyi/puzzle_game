@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.Objects;
 import java.util.Random;
 
 public class GameJFrame extends JFrame implements KeyListener, ActionListener {
@@ -139,7 +138,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
                 //指定图片位置
                 jLabel.setBounds(105*j+83,105*i+134,105,105);
                 //设置边框
-                jLabel.setBorder(new BevelBorder(1));
+                jLabel.setBorder(new BevelBorder(BevelBorder.RAISED));
                 //把管理容器添加到界面之中
                 this.getContentPane().add(jLabel);
             }
@@ -319,5 +318,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         }
         //循环结束数组遍历比较完毕,全部一样返回true
         return true;
+
+
     }
 }

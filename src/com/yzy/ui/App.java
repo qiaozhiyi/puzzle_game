@@ -8,6 +8,6 @@ public class App {
         //new LoginJFrame();
         //new RegisterJFrame();
         new GameJFrame();
-
+        //下一部的操作是打包exe
     }
 }
